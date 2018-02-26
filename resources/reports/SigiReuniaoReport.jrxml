@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="784" leftMargin="29" rightMargin="29" topMargin="29" bottomMargin="29" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
+	<property name="ireport.zoom" value="1.6528925619834802"/>
+	<property name="ireport.x" value="434"/>
+	<property name="ireport.y" value="52"/>
+	<parameter name="dataRelatorio" class="java.lang.String"/>
+	<parameter name="diasRelatorio" class="java.lang.String"/>
+	<parameter name="mesRelatorio" class="java.lang.String"/>
+	<parameter name="metaMontagemSMA" class="java.lang.String"/>
+	<parameter name="metaMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinRetornados" class="java.lang.String"/>
+	<parameter name="metaMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinCorteCostura" class="java.lang.String"/>
+	<parameter name="metaMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasDobradas" class="java.lang.String"/>
+	<parameter name="metaPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="metaPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasEnviadas" class="java.lang.String"/>
+	<parameter name="metaPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinSMACostura" class="java.lang.String"/>
+	<parameter name="metaMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasCortadas" class="java.lang.String"/>
+	<parameter name="metaPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasRetornadas" class="java.lang.String"/>
+	<parameter name="metaPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasRevisadas" class="java.lang.String"/>
+	<parameter name="metaPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinEnviados" class="java.lang.String"/>
+	<parameter name="metaMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="realMontagemSMA" class="java.lang.String"/>
+	<parameter name="realMinSMACostura" class="java.lang.String"/>
+	<parameter name="realMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="realMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasEnfestar" class="java.lang.String"/>
+	<parameter name="realPecasCortadas" class="java.lang.String"/>
+	<parameter name="realPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="realMinCorteCostura" class="java.lang.String"/>
+	<parameter name="realPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasEnviadas" class="java.lang.String"/>
+	<parameter name="realPecasRetornadas" class="java.lang.String"/>
+	<parameter name="realMinEnviados" class="java.lang.String"/>
+	<parameter name="realMinRetornados" class="java.lang.String"/>
+	<parameter name="realPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="realMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasRevisadas" class="java.lang.String"/>
+	<parameter name="realPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasDobradas" class="java.lang.String"/>
+	<parameter name="realPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="percMontagemSMA" class="java.lang.String"/>
+	<parameter name="percMinSMACostura" class="java.lang.String"/>
+	<parameter name="percPecasCortadas" class="java.lang.String"/>
+	<parameter name="percPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="percMinCorteCostura" class="java.lang.String"/>
+	<parameter name="percPecasEnviadas" class="java.lang.String"/>
+	<parameter name="percPecasRetornadas" class="java.lang.String"/>
+	<parameter name="percMinEnviados" class="java.lang.String"/>
+	<parameter name="percMinRetornados" class="java.lang.String"/>
+	<parameter name="percPecasRevisadas" class="java.lang.String"/>
+	<parameter name="percPecasDobradas" class="java.lang.String"/>
+	<parameter name="percMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="percMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="percMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="percMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="percMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="mediaMontagemSMA" class="java.lang.String"/>
+	<parameter name="mediaMinSMACostura" class="java.lang.String"/>
+	<parameter name="mediaPecasCortadas" class="java.lang.String"/>
+	<parameter name="mediaPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="mediaMinCorteCostura" class="java.lang.String"/>
+	<parameter name="mediaPecasEnviadas" class="java.lang.String"/>
+	<parameter name="mediaPecasRetornadas" class="java.lang.String"/>
+	<parameter name="mediaMinEnviados" class="java.lang.String"/>
+	<parameter name="mediaMinRetornados" class="java.lang.String"/>
+	<parameter name="mediaPecasRevisadas" class="java.lang.String"/>
+	<parameter name="mediaPecasDobradas" class="java.lang.String"/>
+	<parameter name="diasRelatorioMes" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["\\resources\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="78" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="36" width="185" height="40" uuid="d5c9b817-a9a2-477e-b3f9-ceb6d12d9742"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="185" y="36" width="507" height="40" uuid="f1f69016-c1c7-4d2f-bc84-027345e9a3b4"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="693" y="36" width="91" height="40" uuid="d2cf3ab7-fc75-4012-bd39-69c95b5d436b"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="36" width="185" height="20" uuid="4924bf7d-f67d-48dd-b6f4-71938117a5c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="36" width="506" height="20" uuid="5ffb9228-d5ff-4142-b580-d28aa950b5f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[SIGI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="56" width="507" height="20" uuid="bd667f80-210a-4f3b-b063-8a8ea21e840d"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE INF. GERAIS INDUSTRIAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="56" width="185" height="20" uuid="6b114bc4-e224-4f8f-827a-e2ab060bd66b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="693" y="36" width="91" height="40" uuid="b53e9581-95be-43a4-b9f1-9d35ae814e5e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diasRelatorio}+"/"+$P{diasRelatorioMes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="359" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-2" width="784" height="37" uuid="fb54c463-0d2e-4265-a8ee-c01419b024ec"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="306" y="15" width="315" height="1" uuid="faea33c3-e304-4053-8635-d86aa5f226ea"/>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="35" width="784" height="30" uuid="0c2178ac-42cb-4618-8293-8216be890283"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="356" y="16" width="1" height="202" uuid="0a623d91-5329-44b1-92cc-5bc7a67d2121"/>
+			</line>
+			<line>
+				<reportElement x="408" y="16" width="1" height="202" uuid="4ff28912-0146-49dc-95dd-4a3571d1a33c"/>
+			</line>
+			<line>
+				<reportElement x="462" y="0" width="1" height="218" uuid="0a380d6d-8128-442b-8314-c6590837b43e"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="514" y="16" width="1" height="202" uuid="ee8d5a9e-572e-4a4f-b352-fe626750c166"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="566" y="16" width="1" height="202" uuid="5014fc34-36f2-4ba0-be39-3d30f5d4c313"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="621" y="0" width="1" height="218" uuid="98de8a99-b67a-4d3e-a6fb-f4909990b1f2"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="692" y="-2" width="1" height="220" uuid="13e20e68-176f-4412-af9c-387225ec1dce"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="185" y="50" width="599" height="1" uuid="20db486f-04c8-4e6d-808c-897c15313283"/>
+			</line>
+			<staticText>
+				<reportElement x="186" y="-2" width="119" height="37" uuid="3d92604a-3dc6-4a77-b097-220c463f198a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="-2" width="185" height="37" uuid="796d045b-26f5-4d6b-a73d-c8127863e87d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTÁGIOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="-2" width="158" height="16" uuid="0a80b92e-e961-48ae-a0d3-1d801cee26c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="-2" width="158" height="18" uuid="031fbda3-7e5e-452c-898b-f28f185179f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="-2" width="70" height="37" uuid="fc46944e-d36a-4d66-8357-60679898cbf9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FALTA PARA META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="16" width="51" height="19" uuid="0bb972a8-ece6-4013-a4cc-4a7b65a5ab49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="16" width="52" height="19" uuid="83617717-b8ee-421d-9b15-59d68099f494"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="16" width="54" height="19" uuid="baf67181-3da6-40b5-bf4e-5c8f02c44b76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[% VARIAÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="16" width="53" height="19" uuid="10f06249-ee24-4f47-bd23-57fa7f8f8a4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="514" y="16" width="53" height="19" uuid="bcfd1e2b-37ae-4759-b224-c212d61f75d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="567" y="16" width="53" height="19" uuid="4f5c136a-3655-4773-a869-4f8b6bfcf584"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[% VARIAÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="35" width="120" height="16" uuid="1bc87518-2cdf-452d-9b16-d606210b3a41"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pçs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="50" width="119" height="15" uuid="b3c69129-1543-4524-a737-7670ba763d5b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. SMA para Costura]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="65" width="784" height="60" backcolor="#FFFFFF" uuid="0fb382dd-1a1c-484d-ab5f-cf58a28c6ca8"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="65" width="185" height="60" backcolor="#CCCCCC" uuid="b7f7f904-c7eb-4855-be88-0c7bf7c87264"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CORTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="65" width="121" height="16" uuid="bafe532e-58df-48d4-b985-ed5a5c2aa0ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças para Enfestar ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="81" width="119" height="14" uuid="00ca483f-de5f-4c7a-8b37-321ba6e5957f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Cortadas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="96" width="120" height="14" uuid="feb35711-9432-4e85-b0c8-3f9ec435a67a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Preparadas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="111" width="120" height="14" uuid="d262ba2f-2ec0-49f7-8131-0b4e13aa4212"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Corte para Costura ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="125" width="784" height="60" backcolor="#CCCCCC" uuid="54c3ba30-c020-4db5-8e2c-99c844f6b76f"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="125" width="186" height="60" backcolor="#FFFFFF" uuid="5d8cf80e-0989-43a4-b55b-f7b51337889d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACÇÃO / COSTURA INTERNA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="125" width="119" height="15" uuid="e718dade-7371-467f-a42e-33603ff7b0f6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Enviadas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="141" width="120" height="14" uuid="f0e84db7-613f-495a-8a8b-33f8f655311f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Retornadas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="156" width="120" height="15" uuid="cb0c4159-864a-4e25-a569-794519366b13"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Enviados ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="172" width="119" height="13" uuid="edf932b9-e503-4284-be36-958770181e8c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Retornados ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="185" width="784" height="17" backcolor="#CCCCCC" uuid="fb7f171e-c9c1-435b-bf03-7ef26ebd4db1"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="185" width="185" height="17" backcolor="#FFFFFF" uuid="398f366a-bb53-4572-b47a-e5d6d3fbb7d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REVISÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="185" width="120" height="17" uuid="22560e0e-469c-4039-ba7a-93d11d0c6629"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Revisadas ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="202" width="784" height="16" backcolor="#CCCCCC" uuid="2b26ce3c-e71c-434b-affa-e4764a66b241"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="202" width="186" height="17" backcolor="#FFFFFF" uuid="9d827d33-7030-4809-9a7c-bab397f6a1e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOBRAÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="203" width="122" height="16" uuid="d0c4a893-0821-4b56-9773-e119aef7e48c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Dobradas ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="305" y="35" width="52" height="16" uuid="94d2de02-a01b-4525-a084-073d164b12e6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMontagemSMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="35" width="53" height="16" uuid="261c6521-c072-4d28-bf30-8e65a3fce3f5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMontagemSMAAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="50" width="51" height="15" uuid="d5275a05-21e3-409d-b04b-eba2ac3e7d35"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinSMACostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="50" width="53" height="15" uuid="6c88677f-012e-4313-aa50-974d58b4fdb4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinSMACosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="81" width="50" height="14" uuid="006eb3db-adaa-4116-a820-c78529e89ceb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasCortadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="80" width="52" height="16" uuid="490a79d9-ce22-4fa8-807e-39ed13d263c1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasCortadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="96" width="50" height="14" uuid="f5213526-c56b-4fc7-a9f1-0e730c8dde3d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasPrecparadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="96" width="52" height="14" uuid="6bcaada4-6e89-406d-8a38-f2e3779bef38"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasPrecparadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="111" width="50" height="14" uuid="bdfbb0e3-0d0a-4569-beab-5c5808160d16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinCorteCostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="110" width="51" height="15" uuid="f2549088-d401-4735-8934-3f885f3beaad"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinCorteCosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="125" width="51" height="15" uuid="00c49a44-55a7-4405-a22c-779949e11bca"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasEnviadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="125" width="51" height="15" uuid="e974e79e-272e-4e18-a1b1-1d7a7e666ff6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasEnviadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="141" width="52" height="15" uuid="4de4b646-08cb-4b1e-9046-daef44ae989d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRetornadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="141" width="51" height="15" uuid="52a6b063-2f1b-4b01-84c4-5e7ac1086115"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRetornadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="156" width="51" height="15" uuid="695fe641-b191-4bca-a812-640b049ddbf9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinEnviados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="156" width="52" height="15" uuid="beb29a6f-8e43-45b3-bb94-e773e9d35a8d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinEnviadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="172" width="50" height="13" uuid="58496b1c-778d-418a-b8ae-ffa8af7249c5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinRetornados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="171" width="52" height="14" uuid="fb6c5c2e-82e8-4375-906b-65789c81bee4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaMinRetornadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="185" width="49" height="17" uuid="23066a98-9bdc-43b8-9549-a690dcb9fe07"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRevisadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="464" y="185" width="51" height="17" uuid="cea06fd9-1957-43d0-8e8d-9584dfe5a7de"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRevisadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="200" width="51" height="19" uuid="0b61a3aa-5e71-4a25-9220-be0092927c39"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasDobradas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="464" y="200" width="52" height="19" uuid="f9288998-a4e7-4e95-b471-e589a85bce9b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasDobradasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="35" width="52" height="16" uuid="dfdebb55-8908-408f-92d1-157fd74a3599"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMontagemSMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="50" width="52" height="15" uuid="db9ee098-9027-4f20-a22e-37e6ccd1680c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinSMACostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="35" width="52" height="15" uuid="4296506e-6567-48b2-8a0c-c9584ab81ad0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMontagemSMAAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="50" width="51" height="15" uuid="2bf5bbad-7402-4fc1-acd6-97fc62a38e87"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinSMACosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="65" width="51" height="15" uuid="30dd5f1d-50e2-4b33-a5ad-a9f831cef15f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasEnfestar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="81" width="51" height="14" uuid="72538337-8478-40f4-9b7d-da58980bab87"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasCortadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="96" width="51" height="14" uuid="013844ee-c1f2-4458-9743-76c39f4f143b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasPrecparadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="110" width="51" height="15" uuid="719c8456-9e6c-4323-9377-cb98467f14a8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCorteCostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="80" width="52" height="15" uuid="14cccc1b-d854-4ea0-81ef-5cf0e5adb779"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasCortadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="95" width="54" height="15" uuid="6f56d0d3-fc87-408e-b117-1c31c9e93cfc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasPrecparadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="110" width="52" height="15" uuid="68212eab-2e67-4459-b8a9-fa172f0a2459"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCorteCosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="125" width="51" height="15" uuid="faf12b67-67b8-4f92-a1b0-703f441f8bb2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasEnviadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="141" width="52" height="14" uuid="7687cb1b-7088-4b56-9f14-c29af7903115"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRetornadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="156" width="51" height="15" uuid="d8e48a8e-8352-45cb-b237-e2e94978a0e3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinEnviados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="172" width="51" height="13" uuid="df9d53c9-f22d-43b9-858e-71bd47f20427"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRetornados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="514" y="125" width="52" height="15" uuid="e9348e27-52f7-44d2-8e8a-32b52ac1fc47"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasEnviadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="141" width="51" height="14" uuid="ea04ee42-f93c-487e-8e56-b75796df7b64"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRetornadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="156" width="53" height="16" uuid="5a74f80c-331c-401b-845a-cde628fb485c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinEnviadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="171" width="52" height="14" uuid="dd083ce4-2de1-470f-a0ed-53583ea1a72f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRetornadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="185" width="51" height="17" uuid="b1141d43-4294-443c-8d1b-4fc204655eac"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRevisadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="200" width="50" height="19" uuid="e7eee372-00a9-4fca-a2b0-f157fac35683"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasDobradas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="185" width="50" height="17" uuid="49c8f4ea-4785-42c0-9d69-e24bf4e2ccc3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRevisadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="200" width="51" height="19" uuid="6ac2de2d-e696-4f76-bddc-1f76811e6329"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasDobradasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="35" width="55" height="15" uuid="abf4e7f1-cf25-450f-9c64-0dcea817701d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMontagemSMAAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="50" width="56" height="15" uuid="935524c6-4091-4d06-b5e5-f505227f0fe8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinSMACosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="96" width="53" height="15" uuid="dfbcd25f-b755-410d-a7ff-49fe52b02c06"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasPrecparadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="81" width="56" height="14" uuid="cea29cb1-be93-43ce-88b5-00ac4b15cd72"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasCortadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="110" width="55" height="15" uuid="0fdd7b99-d2db-466a-8e01-905c1ac74964"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinCorteCosturaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="36" width="55" height="15" uuid="b37fb818-f171-4833-9026-ac0366677134"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMontagemSMA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="51" width="54" height="14" uuid="e81ea096-8941-475d-aff9-a5895d63655e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinSMACostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="81" width="53" height="14" uuid="288e299b-d9d6-4478-981e-c9671877ed96"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasCortadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="96" width="53" height="14" uuid="0b0f519a-b440-46d5-91ff-6507061fd93e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasPrecparadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="110" width="53" height="15" uuid="ea078f6f-2b86-4b4a-aceb-fafbba06aa75"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinCorteCostura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="125" width="53" height="15" uuid="75a075f6-ad5e-4a91-ac35-27dba0cd612c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasEnviadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="141" width="54" height="14" uuid="71a285f6-0621-400c-ad11-a79bcf3068e4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasRetornadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="156" width="54" height="15" uuid="6731f1cc-4101-4dfc-9c6a-9075e35fad3a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinEnviados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="172" width="54" height="13" uuid="1a76bbab-40a6-45b8-a73b-b34fa29463fb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinRetornados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="125" width="54" height="16" uuid="b18758c6-1ad1-4db0-ae2f-4add56bfa345"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasEnviadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="141" width="56" height="14" uuid="d28b9917-fa1b-473b-9f4a-593906fd33f1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasRetornadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="156" width="55" height="14" uuid="5a3cca20-4e9b-4332-918e-bfabe19bc2c2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinEnviadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="171" width="56" height="14" uuid="52e05348-7daa-4ce6-a890-100c52e1ecac"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percMinRetornadosAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="185" width="52" height="17" uuid="aea4f668-60b1-4681-8028-99fb41e9a774"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasRevisadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="568" y="185" width="54" height="17" uuid="a2d05f81-cb0a-4434-8e9e-9cc7118c5e5d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasRevisadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="200" width="53" height="19" uuid="2343f12a-de8f-4d6e-8d89-16bd63b5a2fe"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasDobradas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="568" y="200" width="53" height="19" uuid="5427b17c-8b2d-4566-996e-c4837d044dda"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{percPecasDobradasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="621" y="36" width="71" height="14" uuid="6c7a0246-9eb8-49d7-bba9-070e031bf9ab"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realMontagemSMAAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{metaMontagemSMAAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.000" isBlankWhenNull="true">
+				<reportElement x="622" y="51" width="71" height="14" uuid="47fcc139-e25f-4e81-a8c3-82ad71070bd5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realMinSMACosturaAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaMinSMACosturaAcumulado}.replace(".","").replace(",","."))
+]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="622" y="81" width="70" height="14" uuid="16da2e4d-e86c-4c44-ae06-6af41b2b63f9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasCortadasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasCortadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="622" y="96" width="70" height="14" uuid="ba4b8ee9-256e-4266-a897-083b7e665a3f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasPrecparadasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasPrecparadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.000" isBlankWhenNull="true">
+				<reportElement x="622" y="111" width="70" height="14" uuid="00ecf18d-568b-4c5e-9079-855f7400d232"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realMinCorteCosturaAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaMinCorteCosturaAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="623" y="125" width="69" height="15" uuid="c4456520-7c09-499c-bfa0-8973bfeaad4d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasEnviadasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasEnviadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="623" y="141" width="69" height="14" uuid="653a9487-a757-4dc7-b5aa-f3db61791843"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasRetornadasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasRetornadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.000" isBlankWhenNull="true">
+				<reportElement x="622" y="156" width="70" height="15" uuid="f991219a-7960-4c7b-99a4-c08bdca50b54"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realMinEnviadosAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaMinEnviadosAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.000" isBlankWhenNull="true">
+				<reportElement x="622" y="172" width="70" height="13" uuid="d17975d8-c57b-4aee-b2a2-0cf0b842f8d3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realMinRetornadosAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaMinRetornadosAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="623" y="185" width="69" height="18" uuid="cb4dfefd-477b-4899-be4b-2b7b86c91b32"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasRevisadasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasRevisadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement x="623" y="200" width="69" height="19" uuid="5757122b-1493-4d09-9546-240fd0cb054e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasDobradasAcumulado}.replace(".","").replace(",","."))
+-Float.valueOf($P{metaPecasDobradasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="185" y="-2" width="1" height="220" uuid="ffb692dc-29c2-4484-a60d-6c753cdc3a22"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="305" y="-2" width="1" height="220" uuid="0392b0d3-7c0f-47a7-8d95-aac4f94d83c5"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="185" y="80" width="599" height="1" uuid="45b99d45-aa9a-4e9c-ae74-b567bcb4e3f3"/>
+			</line>
+			<line>
+				<reportElement x="185" y="95" width="599" height="1" uuid="40a5054c-edcc-41a6-ad6b-4ebd76e002ec"/>
+			</line>
+			<line>
+				<reportElement x="185" y="110" width="599" height="1" uuid="aafdccfd-81ce-4ee9-b2c2-3fe054c63580"/>
+			</line>
+			<line>
+				<reportElement x="185" y="140" width="599" height="1" uuid="ec63052d-ab10-4958-b4eb-88579067e949"/>
+			</line>
+			<line>
+				<reportElement x="186" y="155" width="598" height="1" uuid="c7700c35-f01d-4779-a2d5-6c49d2d0b728"/>
+			</line>
+			<line>
+				<reportElement x="185" y="171" width="599" height="1" uuid="76ff915e-edc2-4721-9920-d2aeee3ce1c5"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="35" width="186" height="30" backcolor="#CCCCCC" uuid="48852023-6e8c-42d3-83b1-78224ad693e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montagem SMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="693" y="0" width="91" height="35" uuid="0de3959e-7fb3-4fbe-8823-0a73be25694c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dias de Atraso]]></text>
+			</staticText>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="36" width="91" height="14" uuid="f668e484-05d3-4bd5-9988-09c37a50e2fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaMontagemSMAAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realMontagemSMAAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaMontagemSMA}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="51" width="91" height="14" uuid="335da6fb-4738-4451-bbb9-7a95a328cdc3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaMinSMACosturaAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realMinSMACosturaAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaMinSMACostura}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="81" width="91" height="14" uuid="4c9c40d5-eb40-41b3-8dde-7e53963dec51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasCortadasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasCortadasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasCortadas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="96" width="91" height="15" uuid="fe125bb5-53c9-46d6-b5fb-e82374afeab6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasPrecparadasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasPrecparadasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasPrecparadas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="111" width="91" height="14" uuid="4db5a8ba-9ecf-4c41-a824-03a647921fd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaMinCorteCosturaAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realMinCorteCosturaAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaMinCorteCostura}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="125" width="91" height="15" uuid="0cfa6429-a6de-4f2f-a0f8-c4429633858b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasEnviadasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasEnviadasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasEnviadas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="141" width="91" height="14" uuid="0fb7d69c-6238-402a-b58c-17488d8d61b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasRetornadasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasRetornadasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasRetornadas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="156" width="91" height="14" uuid="b15888b4-13b6-4b03-988a-dfc3cc927ef0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaMinEnviadosAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realMinEnviadosAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaMinEnviados}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="692" y="172" width="92" height="13" uuid="bf5230e8-b7f2-4377-b9d3-68104b65d987"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaMinRetornadosAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realMinRetornadosAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaMinRetornados}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="692" y="185" width="92" height="18" uuid="058564e7-8184-425c-92ad-9955041da16d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasRevisadasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasRevisadasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasRevisadas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.0">
+				<reportElement x="693" y="203" width="91" height="15" uuid="cea09f80-86f0-4eb5-b50d-dacef91fd994"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(Float.valueOf($P{metaPecasDobradasAcumulado}.replace(".","").replace(",","."))
+- Float.valueOf($P{realPecasDobradasAcumulado}.replace(".","").replace(",",".")))/(Float.valueOf($P{metaPecasDobradas}.replace(".","").replace(",",".")))]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

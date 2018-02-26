@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
+	<property name="ireport.zoom" value="1.8181818181818215"/>
+	<property name="ireport.x" value="253"/>
+	<property name="ireport.y" value="1104"/>
+	<parameter name="dataRelatorio" class="java.lang.String"/>
+	<parameter name="diasRelatorio" class="java.lang.String"/>
+	<parameter name="mesRelatorio" class="java.lang.String"/>
+	<parameter name="estoqueTinturaria" class="java.lang.String"/>
+	<parameter name="estoqueMalhaTinta" class="java.lang.String"/>
+	<parameter name="estoqueTecidoPlano" class="java.lang.String"/>
+	<parameter name="estoqueTecidoPlanoTerc" class="java.lang.String"/>
+	<parameter name="estoqueFiosCru" class="java.lang.String"/>
+	<parameter name="estoqueFiosTinto" class="java.lang.String"/>
+	<parameter name="estoqueMalhaCrua" class="java.lang.String"/>
+	<parameter name="estoqueTotal" class="java.lang.String"/>
+	<parameter name="metaMontagemSMA" class="java.lang.String"/>
+	<parameter name="metaMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinRetornados" class="java.lang.String"/>
+	<parameter name="metaMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinCorteCostura" class="java.lang.String"/>
+	<parameter name="metaMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasDobradas" class="java.lang.String"/>
+	<parameter name="metaPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="metaPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasEnviadas" class="java.lang.String"/>
+	<parameter name="metaPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinSMACostura" class="java.lang.String"/>
+	<parameter name="metaMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasCortadas" class="java.lang.String"/>
+	<parameter name="metaPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasRetornadas" class="java.lang.String"/>
+	<parameter name="metaPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecas1Qualidade" class="java.lang.String"/>
+	<parameter name="metaPecas1QualidadeAcumulado" class="java.lang.String"/>
+	<parameter name="metaPecasRevisadas" class="java.lang.String"/>
+	<parameter name="metaPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="metaMinEnviados" class="java.lang.String"/>
+	<parameter name="metaMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="realProducaoMalharia" class="java.lang.String"/>
+	<parameter name="realEnvioBeneficiamento" class="java.lang.String"/>
+	<parameter name="realRetornoBeneficiamento" class="java.lang.String"/>
+	<parameter name="realMontagemSMA" class="java.lang.String"/>
+	<parameter name="realMinSMACostura" class="java.lang.String"/>
+	<parameter name="realProducaoMalhariaAcumulado" class="java.lang.String"/>
+	<parameter name="realEnvioBeneficiamentoAcumulado" class="java.lang.String"/>
+	<parameter name="realRetornoBeneficiamentoAcumulado" class="java.lang.String"/>
+	<parameter name="realMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="realMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasEnfestar" class="java.lang.String"/>
+	<parameter name="realPecasCortadas" class="java.lang.String"/>
+	<parameter name="realPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaCorte" class="java.lang.String"/>
+	<parameter name="realHorasExtrasCorte" class="java.lang.String"/>
+	<parameter name="realMinCorteCostura" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeTotalCorte" class="java.lang.String"/>
+	<parameter name="realMinRealizadosTotalCorte" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaMaquina" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeMaquina" class="java.lang.String"/>
+	<parameter name="realMinRealizadoMaquina" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaAcabamento" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeAcabamento" class="java.lang.String"/>
+	<parameter name="realMinRealizadoAcabamento" class="java.lang.String"/>
+	<parameter name="realEficienciaCorte" class="java.lang.String"/>
+	<parameter name="realPecasEnfestarAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaCorteAcumulado" class="java.lang.String"/>
+	<parameter name="realNrHrExtraCorteAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeTotalCorteAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRealizadosTotalCorteAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaMaquinaAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeMaquinaAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRealizadoMaquinaAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaAcabamentoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeAcabamentoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRealizadoAcabamentoAcumulado" class="java.lang.String"/>
+	<parameter name="realEficienciaCorteAcumulado" class="java.lang.String"/>
+	<parameter name="realRetornoEstamparia" class="java.lang.String"/>
+	<parameter name="realRetornoBordado" class="java.lang.String"/>
+	<parameter name="realRetornoEstampariaAcumulado" class="java.lang.String"/>
+	<parameter name="realRetornoBordadoAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasEnviadas" class="java.lang.String"/>
+	<parameter name="realPecasRetornadas" class="java.lang.String"/>
+	<parameter name="realMinEnviados" class="java.lang.String"/>
+	<parameter name="realMinRetornados" class="java.lang.String"/>
+	<parameter name="realMinCosturaAlocado" class="java.lang.String"/>
+	<parameter name="realMinProdInterno" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretoInterno" class="java.lang.String"/>
+	<parameter name="realHorasExtrasCostura" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeInterno" class="java.lang.String"/>
+	<parameter name="realEficienciaCosturaInterna" class="java.lang.String"/>
+	<parameter name="realPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="realMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCosturaAlocadoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinProdInternoAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretoInternoAcumulado" class="java.lang.String"/>
+	<parameter name="realHorasExtrasCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeInternoAcumulado" class="java.lang.String"/>
+	<parameter name="realEficienciaCosturaInternaAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasRevisadas" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaRevisao" class="java.lang.String"/>
+	<parameter name="realHorasExtrasRevisao" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeRevisao" class="java.lang.String"/>
+	<parameter name="realMinRealizadosRevisao" class="java.lang.String"/>
+	<parameter name="realEficienciaRevisao" class="java.lang.String"/>
+	<parameter name="realPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaRevisaoAcumulado" class="java.lang.String"/>
+	<parameter name="realHorasExtrasRevisaoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeRevisaoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRealizadosRevisaoAcumulado" class="java.lang.String"/>
+	<parameter name="realEficienciaRevisaoAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasDobradas" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaDobracao" class="java.lang.String"/>
+	<parameter name="realHorasExtrasDobracao" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeDobracao" class="java.lang.String"/>
+	<parameter name="realMinRealizadosDobracao" class="java.lang.String"/>
+	<parameter name="realEficienciaDobracao" class="java.lang.String"/>
+	<parameter name="realPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="realNrMaoObraDiretaDobracaoAcumulado" class="java.lang.String"/>
+	<parameter name="realHorasExtrasDobracaoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinCapacidadeDobracaoAcumulado" class="java.lang.String"/>
+	<parameter name="realMinRealizadosDobracaoAcumulado" class="java.lang.String"/>
+	<parameter name="realEficienciaDobracaoAcumulado" class="java.lang.String"/>
+	<parameter name="realPecas1Qualidade" class="java.lang.String"/>
+	<parameter name="realPecas2Qualidade" class="java.lang.String"/>
+	<parameter name="realTotalEnvioExpedicao" class="java.lang.String"/>
+	<parameter name="realPerc2Qualidade" class="java.lang.String"/>
+	<parameter name="realMinEntradaExpedicao" class="java.lang.String"/>
+	<parameter name="realPecasPerda" class="java.lang.String"/>
+	<parameter name="realPerc2QualidadeEPerda" class="java.lang.String"/>
+	<parameter name="realPecas1QualidadeAcumulado" class="java.lang.String"/>
+	<parameter name="realPecas2QualidadeAcumulado" class="java.lang.String"/>
+	<parameter name="realTotalEnvioExpedicaoAcumulado" class="java.lang.String"/>
+	<parameter name="realPerc2QualidadeAcumulado" class="java.lang.String"/>
+	<parameter name="realMinEntradaExpedicaoAcumulado" class="java.lang.String"/>
+	<parameter name="realPecasPerdaAcumulado" class="java.lang.String"/>
+	<parameter name="realPerc2QualidadeEPerdaAcumulado" class="java.lang.String"/>
+	<parameter name="percMontagemSMA" class="java.lang.String"/>
+	<parameter name="percMinSMACostura" class="java.lang.String"/>
+	<parameter name="percPecasCortadas" class="java.lang.String"/>
+	<parameter name="percPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="percMinCorteCostura" class="java.lang.String"/>
+	<parameter name="percPecasEnviadas" class="java.lang.String"/>
+	<parameter name="percPecasRetornadas" class="java.lang.String"/>
+	<parameter name="percMinEnviados" class="java.lang.String"/>
+	<parameter name="percMinRetornados" class="java.lang.String"/>
+	<parameter name="percPecasRevisadas" class="java.lang.String"/>
+	<parameter name="percPecasDobradas" class="java.lang.String"/>
+	<parameter name="percPecas1Qualidade" class="java.lang.String"/>
+	<parameter name="percMontagemSMAAcumulado" class="java.lang.String"/>
+	<parameter name="percMinSMACosturaAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasCortadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasPrecparadasAcumulado" class="java.lang.String"/>
+	<parameter name="percMinCorteCosturaAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasEnviadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasRetornadasAcumulado" class="java.lang.String"/>
+	<parameter name="percMinEnviadosAcumulado" class="java.lang.String"/>
+	<parameter name="percMinRetornadosAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasRevisadasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecasDobradasAcumulado" class="java.lang.String"/>
+	<parameter name="percPecas1QualidadeAcumulado" class="java.lang.String"/>
+	<parameter name="mediaProducaoMalharia" class="java.lang.String"/>
+	<parameter name="mediaEnvioBeneficiamento" class="java.lang.String"/>
+	<parameter name="mediaRetornoBeneficiamento" class="java.lang.String"/>
+	<parameter name="mediaMontagemSMA" class="java.lang.String"/>
+	<parameter name="mediaMinSMACostura" class="java.lang.String"/>
+	<parameter name="mediaPecasCortadas" class="java.lang.String"/>
+	<parameter name="mediaPecasPrecparadas" class="java.lang.String"/>
+	<parameter name="mediaMinCorteCostura" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeTotalCorte" class="java.lang.String"/>
+	<parameter name="mediaMinRealizadosTotalCorte" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeMaquina" class="java.lang.String"/>
+	<parameter name="mediaMinRealizadoMaquina" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeAcabamento" class="java.lang.String"/>
+	<parameter name="mediaMinRealizadoAcabamento" class="java.lang.String"/>
+	<parameter name="mediaRetornoEstamparia" class="java.lang.String"/>
+	<parameter name="mediaRetornoBordado" class="java.lang.String"/>
+	<parameter name="mediaPecasEnviadas" class="java.lang.String"/>
+	<parameter name="mediaPecasRetornadas" class="java.lang.String"/>
+	<parameter name="mediaMinEnviados" class="java.lang.String"/>
+	<parameter name="mediaMinRetornados" class="java.lang.String"/>
+	<parameter name="mediaMinProdInterno" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeInterno" class="java.lang.String"/>
+	<parameter name="mediaPecasRevisadas" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeRevisao" class="java.lang.String"/>
+	<parameter name="mediaMinRealizadosRevisao" class="java.lang.String"/>
+	<parameter name="mediaPecasDobradas" class="java.lang.String"/>
+	<parameter name="mediaMinCapacidadeDobracao" class="java.lang.String"/>
+	<parameter name="mediaMinRealizadosDobracao" class="java.lang.String"/>
+	<parameter name="mediaPecas1Qualidade" class="java.lang.String"/>
+	<parameter name="mediaPecas2Qualidade" class="java.lang.String"/>
+	<parameter name="mediaTotalEnvioExpedicao" class="java.lang.String"/>
+	<parameter name="mediaMinEntradaExpedicao" class="java.lang.String"/>
+	<parameter name="diasCosturaAlocado" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\gilberto.k\\eclipse-workspace\\BGJasperReport\\resources\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="147" y="58" width="356" height="14" uuid="5d52be1f-693c-48f1-82b7-fa650cf411ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[SIGI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="147" y="57" width="356" height="29" uuid="bbffc532-3bfe-4fff-8a46-e65f4719da37"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="57" width="147" height="14" uuid="d9f871c4-ca3d-4e9b-92d5-2949348ea350"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="72" width="147" height="14" uuid="4a871940-1e7f-4a68-b7bf-2862749525ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="147" y="72" width="356" height="14" uuid="279a8477-1bac-4dec-8117-32d2890c9ea5"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE INF. GERAIS INDUSTRIAL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="503" y="57" width="51" height="29" uuid="8b8ac9cb-9526-486a-88bf-7dc84e61a892"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement positionType="Float" x="505" y="58" width="49" height="27" uuid="f9bf2fa4-4e48-499e-a1cc-f26d92c7211a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diasRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="57" width="147" height="29" uuid="69c151e5-bfec-4127-a4b6-0754d2d24bb3"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="58" width="147" height="14" uuid="e74e1dfe-0684-47c6-9ba8-5623d8b0e71d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="72" width="147" height="13" uuid="737aa4b1-f9c9-4708-a1fe-345835f4350c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="100" width="554" height="120" uuid="3563e4f1-37e3-4cad-a2bb-b25fa566ed93"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="100" width="147" height="29" uuid="95d413ab-3fc3-4f4a-98b1-7cb1797e9e63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIÇÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="100" width="190" height="13" uuid="241b41b0-5b8c-44dc-a3a4-86965dca7d6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="100" width="190" height="13" uuid="bae772e9-32ff-4f1c-9243-299d8f3d96e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="114" width="60" height="15" uuid="8b82ed8c-69b4-4fca-a5c5-047562f3a73e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="114" width="68" height="15" uuid="374b8175-ab68-437c-b905-7bf64e4b46ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="114" width="60" height="15" uuid="25f34afe-576a-48f1-80fe-95fc0051d5ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="114" width="68" height="16" uuid="5559a44f-b173-4a3e-8637-d679dc342e29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="114" width="60" height="16" uuid="62d1b045-564d-42a5-a8ea-fa7483db429e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="493" y="114" width="60" height="16" uuid="aa2af53b-fc47-4721-acf5-7dcdb7e464b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="176" y="114" width="377" height="1" uuid="51318e2a-4ade-4b0c-987f-83f7538b7e9c"/>
+			</line>
+			<line>
+				<reportElement x="1" y="130" width="552" height="1" uuid="d9676763-d871-46b9-ae72-c58a980c692f"/>
+			</line>
+			<staticText>
+				<reportElement x="148" y="101" width="27" height="29" uuid="9c52e575-a759-4ed0-971a-a318340a1372"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="175" width="28" height="16" uuid="78568025-11d9-46f5-842d-59fe4d0bc97c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="131" width="28" height="14" uuid="a1b1c6c3-4a8b-4375-bea5-cf4b97330d1f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="191" width="28" height="13" uuid="4c976040-7337-46a3-bff0-40067db42f40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="146" width="28" height="14" uuid="8c320c1d-e230-4ac4-9f51-f99b4f84c3ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="160" width="28" height="14" uuid="623e73a2-b033-4fc6-a339-a51179a706ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="206" width="29" height="14" uuid="125700dc-952d-4140-b913-2da1a5352fd3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<line>
+				<reportElement x="147" y="100" width="1" height="120" uuid="3ad4e2a8-e020-4fb2-b5ce-39b14a03a411"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="175" y="100" width="1" height="120" uuid="85e2baec-d400-4e78-978f-89995acb5064"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="363" y="99" width="1" height="120" uuid="6e078c5a-9bda-4acb-879f-e82222a67a6c"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="235" y="114" width="1" height="106" uuid="9340402e-979f-4328-b6fe-70e5a005f052"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="304" y="114" width="1" height="106" uuid="a266e808-8c0b-41b3-8565-0ea2d60e08d8"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="425" y="114" width="1" height="106" uuid="27fa3f9a-f2fa-41cf-a9bb-441b67823b87"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="493" y="114" width="1" height="106" uuid="67ce9ee7-2cda-4713-ae24-ef0d6e5dd847"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="86" width="554" height="14" backcolor="#CCCCCC" uuid="5959dc53-34e7-453d-b50b-a224948c6faa"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="1" y="87" width="552" height="13" backcolor="#FFFFFF" uuid="5f1bafd8-7776-47cf-9de2-b3c89d5cb257"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REVISÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="130" width="146" height="14" uuid="077f9621-978a-4838-983f-209b71e453bf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Revisadas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="146" width="146" height="13" uuid="96325a64-9c6c-410e-ba4a-caff2dab6e11"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Nr. Mão de Obra Direta  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="161" width="147" height="14" uuid="fa731be6-ad3a-4de6-b24b-82740338d8a5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Nr. Horas Extras ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="176" width="147" height="13" uuid="84ffff2c-a7d4-4cbc-a0a1-f8c22f688d2a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Capacidade ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="147" height="14" uuid="1f132a4d-77ea-48d0-b397-4098891da129"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Realizados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="205" width="146" height="14" uuid="4ac8058b-3bdb-431c-814a-8d5757ae8ddb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Eficiência]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="145" width="552" height="1" uuid="aa92b9ca-d20c-4d5a-954c-61e25bfedae1"/>
+			</line>
+			<line>
+				<reportElement x="1" y="160" width="552" height="1" uuid="c7d2490b-0400-4644-9722-210387b53f6d"/>
+			</line>
+			<line>
+				<reportElement x="1" y="175" width="552" height="1" uuid="4968228d-d2b0-4463-b3d2-3d720599f2a9"/>
+			</line>
+			<line>
+				<reportElement x="1" y="190" width="552" height="1" uuid="4acb48e0-d1bd-447d-9b58-5d82a277e91e"/>
+			</line>
+			<line>
+				<reportElement x="1" y="205" width="552" height="1" uuid="5486a345-e296-4e8e-aa62-bbdcc31ffc8a"/>
+			</line>
+			<textField>
+				<reportElement x="177" y="130" width="58" height="15" uuid="1f46487e-c1fa-4146-b515-587ed05dbca9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRevisadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="132" width="69" height="13" uuid="509cfc3c-e683-423c-87dc-08eddc75364a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRevisadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="145" width="68" height="15" uuid="8613b115-336b-40b7-b0f9-97abb75ae908"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realNrMaoObraDiretaRevisao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="160" width="70" height="14" uuid="4a3eb2d9-26b8-47c2-8fae-515d35abf2fb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realHorasExtrasRevisao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="175" width="68" height="16" uuid="e886813d-0356-47f1-a945-269fa706a103"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCapacidadeRevisao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="190" width="68" height="16" uuid="db2980b0-4285-4969-bb2b-c5ef5fb8fc54"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRealizadosRevisao}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="305" y="130" width="59" height="15" uuid="19cf31c4-3b87-488c-8b7f-71efec9b8d6d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasRevisadas}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecasRevisadas}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="365" y="130" width="60" height="14" uuid="f5558437-12e3-43b0-9d6f-28600c45e4c5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasRevisadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="130" width="68" height="14" uuid="03302657-0b7b-4d95-8f80-0a1bdafaff13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasRevisadasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="175" width="67" height="15" uuid="b4ec2989-ab40-4fca-a641-807d8a6b51eb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCapacidadeRevisaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="190" width="67" height="15" uuid="0169d351-cb95-46f6-9931-c79cf7659d2d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRealizadosRevisaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="494" y="130" width="59" height="14" uuid="f1610f28-3764-4f4b-b3c2-63775c2bcebe"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasRevisadasAcumulado}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecasRevisadasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="206" width="69" height="13" uuid="8b4abf53-0795-4b8e-bd30-948baa8945bd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realEficienciaRevisao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="206" width="67" height="13" uuid="e12b2aa4-47dd-4e2e-83f2-8141541a6304"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realEficienciaRevisaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="148" y="326" width="356" height="14" uuid="6de3f8e2-c8d2-4235-b66e-1e3015a5041e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[SIGI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="148" y="325" width="356" height="29" uuid="78f2b71a-114d-4474-8429-cf1705c17fc3"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="325" width="147" height="14" uuid="33540c99-49bd-4f66-a8fd-0425448ba7aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="340" width="147" height="14" uuid="9f32d367-9dc1-4d38-bedf-54266f65396a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="148" y="340" width="356" height="14" uuid="d1b83ccc-4097-4970-b2d8-aaf1fa57b091"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE INF. GERAIS INDUSTRIAL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="504" y="325" width="51" height="29" uuid="c6c76e97-ce2d-47f9-b436-a96503ec35cc"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement positionType="Float" x="506" y="326" width="49" height="27" uuid="c17a2f6c-8db9-4edb-968e-601e2d3d2581"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diasRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="325" width="147" height="29" uuid="b0cdfd4b-1d5c-408c-8091-2e7bd3276d05"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="326" width="147" height="14" uuid="df1d6591-3230-4302-abd4-0d65a5107ba6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="340" width="147" height="13" uuid="93843c40-7307-4ece-a96a-bba01102f390"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="368" width="554" height="120" uuid="8b5cce58-b2c5-400a-a600-690dccf13ba8"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="368" width="147" height="29" uuid="931f5aaf-13f4-4b42-9314-f660df7a3526"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIÇÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="368" width="190" height="13" uuid="5c7cd7ac-17b7-4fc1-b49f-e4712a0a187b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="368" width="190" height="13" uuid="414c4d30-99ca-402c-ac48-97bc39462c94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="382" width="60" height="15" uuid="5ccdbb4b-f46d-4829-a614-a914e4ef4dd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="382" width="68" height="15" uuid="039f1b49-de07-4aee-b121-9c0b82e181f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="382" width="60" height="15" uuid="d2b3913f-369c-4a48-b7c7-a2a49b274ad8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="382" width="68" height="16" uuid="84c241a3-388a-4f3d-9df4-4c8044839f57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="382" width="60" height="16" uuid="899ccdc0-67e7-42d2-97fd-970d0b6da4c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="382" width="60" height="16" uuid="2273196e-75a5-4dbe-8383-c302df6af14b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="177" y="382" width="377" height="1" uuid="9fe2cf7d-e63e-4f59-ab13-0aa89b0ead95"/>
+			</line>
+			<line>
+				<reportElement x="2" y="398" width="552" height="1" uuid="afa8d2ef-d076-4b27-b135-b2b4f48c092c"/>
+			</line>
+			<staticText>
+				<reportElement x="149" y="369" width="27" height="29" uuid="b0896ed4-8dc2-4f31-8117-d80b17384acb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="443" width="28" height="16" uuid="be65b3a8-a3b6-4f1b-ab57-7184aaa6d433"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="399" width="28" height="14" uuid="8ab53880-06fb-42ca-b06f-bc05307ef98b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="459" width="28" height="13" uuid="21e8d795-65ed-43cb-b516-42ddf66da069"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="414" width="28" height="14" uuid="129ac479-b5fd-4d9f-a19a-cc9a3a60c78f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="428" width="28" height="14" uuid="d31eb843-aea6-45f9-be72-b2b640ec6a10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="474" width="29" height="14" uuid="63c7d807-a3c5-46e9-b5d5-4dc068a142f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<line>
+				<reportElement x="148" y="368" width="1" height="120" uuid="31cd31f3-9c2a-46bc-8dae-7e2ef77c5e05"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="176" y="368" width="1" height="120" uuid="29a71e42-b70f-49d0-b07f-243782013937"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="364" y="367" width="1" height="120" uuid="bb82cee8-eb72-4dd2-87ca-8a919877ec06"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="236" y="382" width="1" height="106" uuid="fb56b324-18e5-4338-8825-9f6ce3aa9857"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="305" y="382" width="1" height="106" uuid="4dd3ca57-b539-4da5-a4d1-f4a4cccf9532"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="426" y="382" width="1" height="106" uuid="663d1825-6d3d-4f7c-a556-03d326384b3b"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="494" y="382" width="1" height="106" uuid="51ced980-4040-44c6-a21f-cee87c4dbc60"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="1" y="354" width="554" height="14" backcolor="#CCCCCC" uuid="a5acdef3-7c0b-4b52-95a8-175cf08d8f03"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="2" y="355" width="552" height="13" backcolor="#FFFFFF" uuid="b60bdc5d-9f2c-4fa0-9f15-8f9f20fef9a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOBRAÇÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="398" width="146" height="14" uuid="196f9b53-961c-4f43-97eb-0d3e07cece44"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Peças Dobradas ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="414" width="146" height="13" uuid="339d9161-1203-4d41-9f28-a25965b780a1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Nr. Mão de Obra Direta  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="429" width="147" height="14" uuid="5cc71908-1108-450e-8351-53afd3eb4074"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Nr. Horas Extras ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="444" width="147" height="13" uuid="9b065590-9562-4b46-bde4-529beae51833"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Capacidade ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="458" width="147" height="14" uuid="9dd18d20-77fa-45a9-a40c-02c2ae295cdb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Min. Realizados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="473" width="146" height="14" uuid="6d22852e-2264-4a73-b510-8c1b9a921c9f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Eficiência]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="413" width="552" height="1" uuid="3a3a84c6-6c36-4e64-82ce-17acaca5ef32"/>
+			</line>
+			<line>
+				<reportElement x="2" y="428" width="552" height="1" uuid="fcc92767-238a-4ad2-aa68-63c14713d680"/>
+			</line>
+			<line>
+				<reportElement x="2" y="443" width="552" height="1" uuid="bb8d40e4-b60a-4974-b628-bcf4aa077a43"/>
+			</line>
+			<line>
+				<reportElement x="2" y="458" width="552" height="1" uuid="2b88a4bd-0fd9-4e34-892a-6c034244133e"/>
+			</line>
+			<line>
+				<reportElement x="2" y="473" width="552" height="1" uuid="fc3e020b-be9a-4562-b07e-4bbfda17cdaf"/>
+			</line>
+			<textField>
+				<reportElement x="177" y="399" width="59" height="14" uuid="0550b998-473a-4849-988a-43019af0bfcd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasDobradas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="399" width="69" height="15" uuid="797fbd5c-0598-4b0b-ad54-91971901c3b6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasDobradas}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="306" y="399" width="57" height="14" uuid="dcc1594a-2978-43be-9e39-75bc3277a940"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasDobradas}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecasDobradas}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="365" y="399" width="60" height="14" uuid="c4e03f29-7a25-4bf9-9a51-7479d12fc88d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecasDobradasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="399" width="67" height="15" uuid="549de5c0-2727-4fff-8963-dce1a1bf1210"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasDobradasAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="494" y="399" width="61" height="14" uuid="91a01bce-d2d1-4bf0-96d0-a4da8231d194"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecasDobradasAcumulado}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecasDobradasAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="414" width="69" height="15" uuid="4041e1f0-d749-4242-a59d-59a95f41a999"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realNrMaoObraDiretaDobracao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="429" width="68" height="13" uuid="3edfff32-f066-48c9-8a00-ba5ea321cf97"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realHorasExtrasDobracao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="444" width="70" height="15" uuid="959a0780-ee8d-422c-a5f0-b3ebfb5d1fdc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCapacidadeDobracao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="459" width="68" height="13" uuid="2fccf012-c7ab-4e59-8c55-e283eaaf1c96"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRealizadosDobracao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="474" width="69" height="13" uuid="c73cdc02-42f8-4a61-975c-c30a8376c8b1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realEficienciaDobracao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="474" width="66" height="14" uuid="1f119351-75e0-4383-9922-6091669372b6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realEficienciaDobracaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="458" width="70" height="16" uuid="51ab3d80-1b9e-40b8-b7e5-58dadad7fd37"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinRealizadosDobracaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="444" width="68" height="15" uuid="ea67b6d0-75bd-4518-bb6e-9dad1b364f7f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinCapacidadeDobracaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="148" y="600" width="356" height="14" uuid="41565023-fb87-46d1-a7c9-c0a95995b15a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[SIGI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="148" y="599" width="356" height="29" uuid="10714c1b-cb4d-46eb-9406-7b676eb9477c"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="599" width="147" height="14" uuid="0507fc33-f0b3-4f36-9228-66a4b51298e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="614" width="147" height="14" uuid="d323bded-a0d0-4da6-860c-b680d6eafbea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="148" y="614" width="356" height="14" uuid="5be93f1d-f12f-4f87-baca-32eab87def75"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE INF. GERAIS INDUSTRIAL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="504" y="599" width="51" height="29" uuid="1f0ef85a-100f-4b97-a313-9404d013e499"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement positionType="Float" x="506" y="600" width="49" height="27" uuid="5e753b4a-c596-478d-bf94-35a19119e0e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{diasRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="599" width="147" height="29" uuid="af7a4aa0-b3a4-4f49-b50f-227a951f260d"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="600" width="147" height="14" uuid="762ef182-f634-4410-b08f-6f91578c11ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="614" width="147" height="13" uuid="ae7beafc-f630-44e9-9b97-924c753f763c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataRelatorio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="642" width="554" height="120" uuid="452e0af7-9c31-4a64-bf35-c4676117ace9"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="642" width="147" height="29" uuid="583e8b3f-bce1-45ca-a9ec-222b1f11f049"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIÇÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="642" width="190" height="13" uuid="6fca55cf-c5f1-437c-bc68-be12e79a90df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="642" width="190" height="13" uuid="e65972f4-f304-405b-9bd7-8d7116104328"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="656" width="60" height="15" uuid="3ca6df4f-9dd4-4300-8a59-417be413c378"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="656" width="68" height="15" uuid="12473015-5ee2-462c-8503-feda7f2e5afe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="656" width="60" height="15" uuid="9babe23f-2fa1-4e18-a92f-f7e5ff5dea11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="656" width="68" height="16" uuid="cae62375-d5fa-4855-9955-a117538f5392"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALIZADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="656" width="60" height="16" uuid="83a308dc-a16e-4751-928a-201d365e8dbb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[META]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="656" width="60" height="16" uuid="11e9f761-05c5-48ef-9440-63d7cd12521b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIFERENÇA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="177" y="656" width="377" height="1" uuid="3251dbdc-74a9-4cbd-af56-c29c8cae9314"/>
+			</line>
+			<line>
+				<reportElement x="2" y="672" width="552" height="1" uuid="786c9e12-c0d8-4379-950c-0279a3b6b01c"/>
+			</line>
+			<staticText>
+				<reportElement x="149" y="643" width="27" height="29" uuid="1f191301-0531-4e79-b971-f6337a0bca72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="717" width="28" height="16" uuid="a1cb209a-3a84-4a5b-9b25-567820c84a50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="673" width="28" height="14" uuid="f4441b24-6f87-45ab-b8d7-d38d4d468859"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="748" width="28" height="13" uuid="cf1ff33b-b016-4f40-ad8d-dc8c1303596c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Min]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="688" width="28" height="14" uuid="d7232bac-bc90-4c49-8f46-bb2a0250129c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="702" width="28" height="14" uuid="d3646b4d-6cca-48d4-81dd-631817be3784"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<line>
+				<reportElement x="148" y="642" width="1" height="120" uuid="7cdedf1d-481e-4870-9787-099f5eec926c"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="176" y="642" width="1" height="120" uuid="ce8cd796-e5bd-4b72-bd1e-3d3e081400e9"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="364" y="641" width="1" height="120" uuid="836daf63-23a6-4d96-83eb-5d304374ff42"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="236" y="656" width="1" height="106" uuid="88248011-3fbd-4d8e-9bf4-d0936c054d7b"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="305" y="656" width="1" height="106" uuid="bb52ca18-a3ad-46f9-9d36-5381b118d8fe"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="426" y="656" width="1" height="106" uuid="4f96c59c-8982-45de-9347-b7767de6bd02"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="494" y="656" width="1" height="106" uuid="f5bde91c-bb3d-4895-be20-e5d62986b68c"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="1" y="628" width="554" height="14" backcolor="#CCCCCC" uuid="a941c0dc-6716-4489-8e6b-a8488b0ef589"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="2" y="629" width="552" height="13" backcolor="#FFFFFF" uuid="b4904f14-6deb-4c6f-8871-662f983d7a36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXPEDIÇÂO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="672" width="146" height="14" uuid="c985d2fb-1f86-41ed-9ce9-724dfd938985"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Entrada 1a Qualidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="688" width="146" height="13" uuid="96a46602-f5d1-424e-9188-1047971231a2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Entrada 2a Qualidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="703" width="147" height="14" uuid="05a1030b-a74c-4666-9948-9649223ecac2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Entrada Perda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="733" width="147" height="13" uuid="c003c0e7-366d-4a9d-8ae4-3664615a222b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[% 2a e Perdas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="748" width="147" height="14" uuid="b3d4cb64-bbd9-4bd3-b616-11184a4c638d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[Minutos entrada Expedição ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="687" width="552" height="1" uuid="abd2922b-bca2-49c1-b435-0213d762155a"/>
+			</line>
+			<line>
+				<reportElement x="2" y="702" width="552" height="1" uuid="37ed7b2e-c4be-4799-922a-aee711fd07e0"/>
+			</line>
+			<line>
+				<reportElement x="2" y="717" width="552" height="1" uuid="7029cc7a-d0fa-4f7b-b47b-177b88866d94"/>
+			</line>
+			<line>
+				<reportElement x="2" y="732" width="552" height="1" uuid="e3e9cb7d-9b8b-4447-84e9-d09300397ee4"/>
+			</line>
+			<line>
+				<reportElement x="2" y="747" width="552" height="1" uuid="99e9a813-902d-4df4-983c-b979a48364c9"/>
+			</line>
+			<textField>
+				<reportElement x="177" y="673" width="58" height="15" uuid="b417aa64-81a6-47d4-9829-1f3ae05a8faf"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecas1Qualidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="673" width="68" height="14" uuid="d12c5397-d0d9-4779-8183-5a427eadd158"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecas1Qualidade}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="306" y="672" width="57" height="15" uuid="6ef0f62d-2741-4eed-9995-57da126723eb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecas1Qualidade}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecas1Qualidade}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="366" y="673" width="60" height="15" uuid="817b7dd7-47c7-46ef-be8e-723e148aa352"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3" spacingAfter="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{metaPecas1QualidadeAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="673" width="68" height="14" uuid="898b01f8-f2b3-47a2-a0b7-9e641bd46ee5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecas1QualidadeAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="495" y="673" width="60" height="14" uuid="50c8d77c-fd89-4a1e-a72b-824d196b1443"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Float.valueOf($P{realPecas1QualidadeAcumulado}.replace(".","").replace(",",".")) - Float.valueOf($P{metaPecas1QualidadeAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="688" width="70" height="14" uuid="ebe362ee-8d57-4d1a-bc12-510ce2d298b7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecas2Qualidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="718" width="68" height="14" uuid="3e4f3942-69a2-4401-8765-f0f951941b01"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realTotalEnvioExpedicao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="748" width="67" height="14" uuid="29d8029e-0714-4e38-875c-3e5e7c648927"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinEntradaExpedicao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="688" width="66" height="14" uuid="e56ceaa3-0a13-472e-a2d4-391b3ca570c0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecas2QualidadeAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="718" width="66" height="14" uuid="a1c40e8f-e3a7-4fd9-926e-a2da658f8500"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realTotalEnvioExpedicaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="748" width="66" height="14" uuid="84ca9ef9-c5c9-4b84-914f-1b9f78227346"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realMinEntradaExpedicaoAcumulado}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="542" width="554" height="1" uuid="061ec337-8246-48be-bd40-3cdb0a7a9f2c"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2" y="274" width="554" height="1" uuid="e00afd8a-0e2e-4464-bad4-e900b022ca7f"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="149" y="733" width="28" height="14" uuid="8417181a-ea1f-48b3-a208-d48857a1e4f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="719" width="147" height="14" uuid="b9a07339-d375-4f11-a66a-0c4605d26037"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="false"/>
+					<paragraph firstLineIndent="2"/>
+				</textElement>
+				<text><![CDATA[TOTAL ENVIO EXPEDIÇÃO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="237" y="703" width="68" height="14" uuid="d69a0394-14f4-4ef6-93bd-db8305c79d6c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasPerda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="733" width="67" height="14" uuid="53dae5c9-6d53-494b-b345-77ca0f64aa84"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPerc2QualidadeEPerda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="703" width="66" height="14" uuid="ddbffe40-057d-4f39-aacf-c73e2b29f3e2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPecasPerdaAcumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="733" width="67" height="14" uuid="88b20431-39b0-4abe-b4f2-ace9768924ab"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realPerc2QualidadeEPerdaAcumulado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>
