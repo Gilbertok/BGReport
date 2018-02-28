@@ -4,16 +4,16 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="libs"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/commons-collections-3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/commons-digester-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/groovy-all-1.5.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/itext-2.1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/jasperreports-5.5.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/jxl-2.6.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/ojdbc8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/poi-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/servlet-api-2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/gilberto.k/eclipse-workspace/BGJasperReport/libs/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/commons-digester-1.7.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/groovy-all-1.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/jasperreports-5.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Dev/workspace/BGReport/libs/commons-beanutils-1.7.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
