@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
 	<property name="ireport.zoom" value="2.200000000000003"/>
-	<property name="ireport.x" value="488"/>
-	<property name="ireport.y" value="1325"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="137"/>
 	<parameter name="dataRelatorio" class="java.lang.String"/>
 	<parameter name="diasRelatorio" class="java.lang.String"/>
 	<parameter name="mesRelatorio" class="java.lang.String"/>
@@ -286,7 +286,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<line>
 				<reportElement x="147" y="99" width="1" height="60" uuid="203464ca-1c35-4b4f-97da-96667cc970b9"/>
@@ -305,14 +305,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="364" y="99" width="190" height="14" uuid="83a909e4-0b0d-4d03-b91a-903ece8ae040"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="113" width="60" height="16" uuid="542378e6-bca9-4872-bf9f-984bf2025d4e"/>
@@ -619,21 +619,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="175" y="325" width="190" height="14" uuid="4de0fffb-4688-40f8-8faa-b191db53fa6b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="364" y="325" width="190" height="14" uuid="34873b36-3358-4225-a617-b4da3efe2237"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="339" width="60" height="16" uuid="56b03450-b1e0-4321-a926-4f2198fa9e81"/>
@@ -1146,21 +1146,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="175" y="621" width="190" height="13" uuid="5e26a7dc-842d-4434-a18c-aa51edbad22b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="364" y="621" width="190" height="13" uuid="5f69e80a-1572-478d-b1b7-17fcfe2109b3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="635" width="60" height="15" uuid="be8ed76f-dcce-42cb-9807-21ae39eb4c10"/>
@@ -1243,7 +1243,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Min]]></text>
+				<text><![CDATA[Uni]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="147" y="681" width="28" height="14" uuid="71a2d0e5-5933-4ad0-88bd-3212eca41788"/>

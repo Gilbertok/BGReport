@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="784" leftMargin="29" rightMargin="29" topMargin="29" bottomMargin="29" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
 	<property name="ireport.zoom" value="1.6528925619834802"/>
-	<property name="ireport.x" value="434"/>
-	<property name="ireport.y" value="52"/>
+	<property name="ireport.x" value="82"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="dataRelatorio" class="java.lang.String"/>
 	<parameter name="diasRelatorio" class="java.lang.String"/>
 	<parameter name="mesRelatorio" class="java.lang.String"/>
@@ -223,14 +223,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="463" y="-2" width="158" height="18" uuid="031fbda3-7e5e-452c-898b-f28f185179f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="622" y="-2" width="70" height="37" uuid="fc46944e-d36a-4d66-8357-60679898cbf9"/>
@@ -981,8 +981,7 @@
 					<paragraph rightIndent="3"/>
 				</textElement>
 				<textFieldExpression><![CDATA[Float.valueOf($P{realMinSMACosturaAcumulado}.replace(".","").replace(",","."))
--Float.valueOf($P{metaMinSMACosturaAcumulado}.replace(".","").replace(",","."))
-]]></textFieldExpression>
+-Float.valueOf($P{metaMinSMACosturaAcumulado}.replace(".","").replace(",","."))]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0" isBlankWhenNull="true">
 				<reportElement x="622" y="81" width="70" height="14" uuid="16da2e4d-e86c-4c44-ae06-6af41b2b63f9"/>

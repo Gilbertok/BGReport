@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="365"/>
-	<property name="ireport.y" value="1220"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1237"/>
 	<parameter name="dataRelatorio" class="java.lang.String"/>
 	<parameter name="diasRelatorio" class="java.lang.String"/>
 	<parameter name="diasCosturaAlocado" class="java.lang.String"/>
@@ -523,21 +523,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="188" y="118" width="158" height="14" uuid="0a80b92e-e961-48ae-a0d3-1d801cee26c7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="346" y="118" width="158" height="14" uuid="031fbda3-7e5e-452c-898b-f28f185179f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="505" y="118" width="50" height="13" uuid="fc46944e-d36a-4d66-8357-60679898cbf9"/>
@@ -1014,7 +1014,7 @@
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="369" width="554" height="14" backcolor="#FFFFFF" uuid="c30b0ff6-bc85-4e2b-81a2-083632ea115d"/>
+				<reportElement mode="Transparent" x="0" y="368" width="554" height="14" backcolor="#FFFFFF" uuid="c30b0ff6-bc85-4e2b-81a2-083632ea115d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
@@ -1114,7 +1114,7 @@
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="402" width="554" height="14" backcolor="#FFFFFF" uuid="5d8cf80e-0989-43a4-b55b-f7b51337889d"/>
+				<reportElement mode="Transparent" x="0" y="403" width="554" height="14" backcolor="#FFFFFF" uuid="5d8cf80e-0989-43a4-b55b-f7b51337889d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
@@ -1268,7 +1268,7 @@
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="469" width="555" height="14" backcolor="#FFFFFF" uuid="35d94abc-0c9d-4d9f-ac92-8dac84f9b58e"/>
+				<reportElement mode="Transparent" x="0" y="468" width="555" height="14" backcolor="#FFFFFF" uuid="35d94abc-0c9d-4d9f-ac92-8dac84f9b58e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
@@ -1392,7 +1392,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Min]]></text>
+				<text><![CDATA[Uni]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="162" y="503" width="24" height="9" uuid="40d3d1bf-3cf8-4dfa-969c-ea2abc2c2624"/>
@@ -1422,7 +1422,7 @@
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="532" width="555" height="14" backcolor="#FFFFFF" uuid="398f366a-bb53-4572-b47a-e5d6d3fbb7d6"/>
+				<reportElement mode="Transparent" x="0" y="533" width="555" height="14" backcolor="#FFFFFF" uuid="398f366a-bb53-4572-b47a-e5d6d3fbb7d6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
@@ -1594,7 +1594,7 @@
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="609" width="555" height="14" backcolor="#FFFFFF" uuid="9d827d33-7030-4809-9a7c-bab397f6a1e0"/>
+				<reportElement mode="Transparent" x="0" y="608" width="555" height="14" backcolor="#FFFFFF" uuid="9d827d33-7030-4809-9a7c-bab397f6a1e0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
@@ -1722,7 +1722,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="162" y="633" width="24" height="9" uuid="dd4d4475-4197-4eea-9dee-712e488feb3b"/>
@@ -1883,21 +1883,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="158" y="708" width="28" height="9" uuid="c3805918-4b1b-43c0-a185-d0b414899d41"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="158" y="718" width="28" height="9" uuid="787023a1-2e36-41b1-ab9b-1ecb910070d1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="1" y="748" width="157" height="10" uuid="721f4d6f-e5c7-4e7f-80f3-30d4e9df48a9"/>
@@ -1919,7 +1919,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="7" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="158" y="738" width="28" height="11" uuid="815a2250-ba7d-485e-b17e-4c3fd3933d43"/>

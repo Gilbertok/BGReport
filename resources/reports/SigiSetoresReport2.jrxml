@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="954a43e7-53a3-4c95-a5a6-9b66836ef1b6">
 	<property name="ireport.zoom" value="1.8181818181818215"/>
-	<property name="ireport.x" value="253"/>
-	<property name="ireport.y" value="1104"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1056"/>
 	<parameter name="dataRelatorio" class="java.lang.String"/>
 	<parameter name="diasRelatorio" class="java.lang.String"/>
 	<parameter name="mesRelatorio" class="java.lang.String"/>
@@ -283,21 +283,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="175" y="100" width="190" height="13" uuid="241b41b0-5b8c-44dc-a3a4-86965dca7d6e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="364" y="100" width="190" height="13" uuid="bae772e9-32ff-4f1c-9243-299d8f3d96e4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="114" width="60" height="15" uuid="8b82ed8c-69b4-4fca-a5c5-047562f3a73e"/>
@@ -366,7 +366,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Min]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="147" y="191" width="28" height="13" uuid="4c976040-7337-46a3-bff0-40067db42f40"/>
@@ -380,7 +380,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Min]]></text>
+				<text><![CDATA[Uni]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="147" y="160" width="28" height="14" uuid="623e73a2-b033-4fc6-a339-a51179a706ba"/>
@@ -449,7 +449,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[REVISÂO]]></text>
+				<text><![CDATA[REVISÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="1" y="130" width="146" height="14" uuid="077f9621-978a-4838-983f-209b71e453bf"/>
@@ -704,21 +704,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="368" width="190" height="13" uuid="5c7cd7ac-17b7-4fc1-b49f-e4712a0a187b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="365" y="368" width="190" height="13" uuid="414c4d30-99ca-402c-ac48-97bc39462c94"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="177" y="382" width="60" height="15" uuid="5ccdbb4b-f46d-4829-a614-a914e4ef4dd4"/>
@@ -787,7 +787,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="148" y="459" width="28" height="13" uuid="21e8d795-65ed-43cb-b516-42ddf66da069"/>
@@ -801,7 +801,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Min]]></text>
+				<text><![CDATA[Uni]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="148" y="428" width="28" height="14" uuid="d31eb843-aea6-45f9-be72-b2b640ec6a10"/>
@@ -870,7 +870,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DOBRAÇÂO]]></text>
+				<text><![CDATA[DOBRAÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="2" y="398" width="146" height="14" uuid="196f9b53-961c-4f43-97eb-0d3e07cece44"/>
@@ -1125,21 +1125,21 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[DESCRIÇÂO]]></text>
+				<text><![CDATA[DESCRIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="642" width="190" height="13" uuid="6fca55cf-c5f1-437c-bc68-be12e79a90df"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO DIÁRIA]]></text>
+				<text><![CDATA[PRODUÇÃO DIÁRIA]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="365" y="642" width="190" height="13" uuid="e65972f4-f304-405b-9bd7-8d7116104328"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUÇÂO ACUMULADA MÊS]]></text>
+				<text><![CDATA[PRODUÇÃO ACUMULADA MÊS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="177" y="656" width="60" height="15" uuid="3ca6df4f-9dd4-4300-8a59-417be413c378"/>
@@ -1201,14 +1201,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="149" y="673" width="28" height="14" uuid="f4441b24-6f87-45ab-b8d7-d38d4d468859"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="148" y="748" width="28" height="13" uuid="cf1ff33b-b016-4f40-ad8d-dc8c1303596c"/>
@@ -1222,14 +1222,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="148" y="702" width="28" height="14" uuid="d3646b4d-6cca-48d4-81dd-631817be3784"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="8" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ref]]></text>
+				<text><![CDATA[Pçs]]></text>
 			</staticText>
 			<line>
 				<reportElement x="148" y="642" width="1" height="120" uuid="7cdedf1d-481e-4870-9787-099f5eec926c"/>
@@ -1284,7 +1284,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[EXPEDIÇÂO]]></text>
+				<text><![CDATA[EXPEDIÇÃO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="2" y="672" width="146" height="14" uuid="c985d2fb-1f86-41ed-9ce9-724dfd938985"/>
