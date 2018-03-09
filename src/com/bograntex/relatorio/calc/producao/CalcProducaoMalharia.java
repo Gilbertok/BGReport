@@ -68,7 +68,7 @@ public class CalcProducaoMalharia extends CalculoProducao {
 						"FROM PCPT_020 TEC " + 
 						"WHERE  TEC.AREA_PRODUCAO = 4 " + 
 						"    AND TEC.ROLO_ESTOQUE > 0 " + 
-						"    AND TEC.PANOACAB_NIVEL99 IN ('2','4') " +
+						"    AND TEC.PANOACAB_NIVEL99 IN ('4') " +
 						"    AND TEC.CODIGO_DEPOSITO = 750 " +
 						"    AND TEC.DATA_PROD_TECEL BETWEEN ? AND ? "; 
 		

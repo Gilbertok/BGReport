@@ -91,7 +91,7 @@ public class SigiRelatorio {
 	
 	public Map<String, Object> getReportParameter() {
 		Map<String, Object> parameters = new HashMap<String, Object>();
-		this.setMessage(" --- Verificando Parâmetros --- ");
+		this.setMessage(" --- Verificando Parï¿½metros --- ");
 		this.setCurrent(1);
 		Date dataRelatorio = new Date();
 		DateUtils data = new DateUtils(dataRelatorio);
@@ -186,7 +186,7 @@ public class SigiRelatorio {
 				break;
 				
 			case 20:
-				this.setMessage("Calculando Estoque Fios Crú...");
+				this.setMessage("Calculando Estoque Fios CrÃº...");
 				this.setCurrent(25);
 				paramsRelatorio.put("estoqueFiosCru", CalcEstoqueFios.calcularToString(1));
 				break;
@@ -216,13 +216,13 @@ public class SigiRelatorio {
 				break;
 				
 			case 45:
-				this.setMessage("Calculando Produção Malharia...");
+				this.setMessage("Calculando ProduÃ§Ã£o Malharia...");
 				this.setCurrent(50);
 				paramsRelatorio = CalcProducaoMalharia.calcular(paramsRelatorio);
 				break;
 			
 			case 50:
-				this.setMessage("Calculando Produção Corte...");
+				this.setMessage("Calculando ProduÃ§Ã£o Corte...");
 				this.setCurrent(55);
 				paramsRelatorio = CalcProducaoCorte.calcular(paramsRelatorio);
 				break;
@@ -234,31 +234,31 @@ public class SigiRelatorio {
 				break;
 				
 			case 60:
-				this.setMessage("Calculando Produção Facção...");
+				this.setMessage("Calculando ProduÃ§Ã£o FacÃ§Ã£o...");
 				this.setCurrent(65);
 				paramsRelatorio = CalcProducaoCostura.calcular(paramsRelatorio);
 				break;
 				
 			case 65:
-				this.setMessage("Calculando Produção Facção Interna...");
+				this.setMessage("Calculando ProduÃ§Ã£o FacÃ§Ã£o Interna...");
 				this.setCurrent(70);
 				paramsRelatorio = CalcProducaoCostura.calcularInterno(paramsRelatorio);
 				break;
 				
 			case 70:
-				this.setMessage("Calculando Produção Revisão...");
+				this.setMessage("Calculando ProduÃ§Ã£o RevisÃ£o...");
 				this.setCurrent(75);
 				paramsRelatorio = CalcProducaoRevisao.calcular(paramsRelatorio);
 				break;
 				
 			case 75:
-				this.setMessage("Calculando Produção Dobração...");
+				this.setMessage("Calculando ProduÃ§Ã£o DobraÃ§Ã£o...");
 				this.setCurrent(80);
 				paramsRelatorio = CalcProducaoDobracao.calcular(paramsRelatorio);
 				break;
 				
 			case 80:
-				this.setMessage("Calculando Produção Expedição...");
+				this.setMessage("Calculando ProduÃ§Ã£o ExpediÃ§Ã£o...");
 				this.setCurrent(85);
 				paramsRelatorio = CalcProducaoExpedicao.calcular(paramsRelatorio);
 				break;
